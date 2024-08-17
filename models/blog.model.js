@@ -8,13 +8,13 @@ const BlogSchema = mongoose.Schema(
     },
 
     content: {
-      type: Number,
+      type: String,
       required: true,
       default: 0,
     },
 
     author: {
-      type: Number,
+      type: String,
       required: true,
       default: 0,
     },
