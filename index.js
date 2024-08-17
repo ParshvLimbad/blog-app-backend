@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const Product = require("./models/product.model");
-const productRoutes = require("./routes/product.route");
+const Blog = require("./models/blog.model");
+const blogRoutes = require("./routes/blog.route");
 const cors = require("cors");
 
 const app = express();
@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 //routes
-app.use("/api/products", productRoutes);
+app.use("/api/blogs", blogRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello from Node API");
